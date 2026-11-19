@@ -143,5 +143,3 @@
  :root{--card-height:min(calc(100dvh - 32px),calc((100vw - 48px) * 16 / 9))}
  .mobile-shell{width:calc(var(--card-height) * 9 / 16);max-width:none;height:var(--card-height)}
 }
-/* Keep the paper background clean; retain only the opening heart ribbon. */
-.ed-section::before,.closing::before{display:none}
