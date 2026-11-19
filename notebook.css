@@ -1,0 +1,28 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+body,.editorial,button,input,.ed-heading,.book-page h3,.book-page p,.couple-line,.invite-copy,.loc-name,.closing>p{font-family:Pretendard,'Noto Sans KR',sans-serif}
+.ed-heading{font-weight:500;letter-spacing:-.025em}.invite-copy{font-weight:400}.open-book{transform:none;border-radius:4px 16px 16px 4px;padding:24px 12px 22px 29px;background:repeating-linear-gradient(to bottom,#fffdf7 0 27px,#d8dce080 27px 28px);border:1px solid #e0d9cf;box-shadow:3px 7px 18px #44322b16;gap:12px;margin-left:0;margin-right:0}.open-book:before{left:-9px;top:20px;bottom:20px;width:24px;background:repeating-linear-gradient(to bottom,transparent 0 8px,#a6a6a6 8px 10px,#484342 10px 13px,#c7c4bd 13px 15px,transparent 15px 28px);border:0;z-index:3}.open-book:after{display:none}.book-page,.book-page:last-child{background:transparent;padding:8px 0;border-radius:0}.book-page img,.book-page:last-child img{transform:none!important;aspect-ratio:1/1;border:5px solid white;border-bottom-width:10px;height:auto;box-shadow:0 2px 5px #0002}.tape{display:none}.book-role{font-family:Pretendard,sans-serif;font-size:10px;margin-top:20px}.book-page h3{font-size:16px;margin:10px 0 18px}.book-page p{color:#565261;font-size:11px;line-height:2}.book-desc{border:0;padding-top:10px}.notebook-contact{margin:22px auto 0;min-height:46px;padding:12px 35px;border:1px solid #b38e97;border-radius:24px;color:var(--burgundy);font-size:14px}.contact-dialog{border:0;border-radius:20px;background:#fffdfa;color:#332e30;padding:28px 20px;width:min(420px,calc(100% - 32px));max-height:85dvh;overflow:auto;margin:auto;box-shadow:0 20px 80px #0003}.contact-dialog::backdrop{background:#211c1e80;backdrop-filter:blur(4px)}.contact-dialog h2{font-size:20px;text-align:center;margin:6px 0 12px}.contact-dialog>p{text-align:center;color:#95878a;font-size:12px;margin-bottom:24px}.contact-close{position:absolute;right:12px;top:10px;min-height:44px;min-width:44px;font-size:26px;color:#86787c}.family-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 12px}.family-card{text-align:center}.family-card small{color:#938186;font-size:12px}.family-card h3{font-size:17px;margin:10px 0 15px}.family-actions{display:flex;justify-content:center;gap:5px}.family-actions a,.family-actions button{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #e7dcdf;border-radius:50%;color:var(--burgundy)}.family-actions svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.family-actions button:disabled{opacity:.35;cursor:not-allowed}.family-card .pending{font-size:10px;color:#a09094;margin-top:7px}.contact-dialog button:focus-visible,.contact-dialog a:focus-visible{outline:2px solid var(--burgundy);outline-offset:2px}
+/* Center-bound, open notebook: keep a clear gutter around the rings. */
+.open-book{padding:24px 14px 22px;gap:30px;border-radius:10px;background:repeating-linear-gradient(to bottom,#fffdf7 0 27px,#d8dce080 27px 28px);box-shadow:0 3px 0 #e5dfd4,0 8px 18px #44322b16}
+.open-book:before{left:calc(50% - 12px);top:18px;bottom:18px;width:24px;background:repeating-linear-gradient(to bottom,transparent 0 8px,#bab7b1 8px 10px,#625d59 10px 13px,#d6d2ca 13px 15px,transparent 15px 28px);filter:drop-shadow(0 1px 1px #30291f35);z-index:3}
+.open-book:after{display:block;content:"";position:absolute;left:calc(50% - 16px);top:0;bottom:0;width:32px;height:auto;clip-path:none;background:linear-gradient(90deg,transparent,#8e80601c 35%,#776a5033 49%,#fffdf7 51%,#8e806018 65%,transparent);z-index:0;pointer-events:none}
+.book-page,.book-page:last-child{position:relative;z-index:1;min-width:0}
+@media(max-width:359px){.open-book{padding-left:10px;padding-right:10px;gap:25px}}
+/* Loose ribbon tails frame the opening message. */
+.invite .ribbon{width:min(100%,300px);height:110px;margin:0 auto 8px;flex-shrink:0}
+.invite .ribbon svg{stroke-width:2.4;filter:drop-shadow(0 2px 2px #782b3d20)}
+.invite .ribbon .ribbon-fold{stroke-width:5;opacity:.22}
+.invite .invite-copy{max-width:350px;margin:0 auto;font-size:13px;line-height:1.95;word-break:keep-all;overflow-wrap:break-word}
+.invite .invitation-photo img{height:max(180px,calc(var(--card-height) - 570px))}
+@media(max-width:359px){.invite .ribbon{height:90px}.invite .invite-copy{font-size:12px}}
+/* Invitation typography: larger readable sans, deliberate lines and stanza spacing. */
+.invite .invite-copy{font-family:Pretendard,'Noto Sans KR',sans-serif;font-size:clamp(15px,4.1vw,18px);font-weight:400;line-height:1.95;letter-spacing:-.035em;color:#242122;width:100%;max-width:380px;word-break:keep-all}
+.invite .invite-copy p{margin:0}
+.invite .invite-copy p+p{margin-top:30px}
+.invite .fine-line{margin:16px auto 30px}
+.invite .date-feature{margin-top:32px}
+.invite .ed-eyebrow{font-family:Pretendard,'Noto Sans KR',sans-serif;font-size:12px;font-weight:300;letter-spacing:.22em;color:#ac7e88}
+@media(max-width:359px){.invite .invite-copy{font-size:14px}.invite .invite-copy p+p{margin-top:26px}}
+.calendar-event-info{margin:0 0 12px;text-align:center}
+.calendar-event-info .date-feature{margin-top:0;font-size:26px}
+.calendar-event-info .venue-feature{margin-top:12px;font-size:14px}
+.calendar-event-info .small-note{margin-top:10px;line-height:1.8}

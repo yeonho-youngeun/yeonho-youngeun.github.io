@@ -1,0 +1,77 @@
+/* Reference proportions: 440px desktop phone, edge-to-edge mobile document. */
+:root{--card-height:100svh}
+html{scroll-snap-type:y proximity}
+html,body{background:#eeebe7}
+.mobile-shell{width:100%;max-width:440px;margin:0 auto}
+.editorial>.ed-section,.editorial>.closing{min-height:0;display:block;scroll-snap-stop:normal}
+.ed-section{padding:64px 28px}
+.invite{padding:52px 28px 0}
+.invitation-photo{margin:32px -28px 0}
+.invitation-photo img{height:auto;aspect-ratio:4/3;object-fit:cover}
+.hero-stage,.hero-stage.captured{height:var(--card-height);min-height:0}
+.hero-stage{scroll-snap-stop:normal}
+.ed-heading{font-size:22px;margin:16px 0 30px}
+.invite h1{font-size:64px}
+.invite-copy,.section-copy{font-size:13px;line-height:2.1}
+.small-note{font-size:11px}
+.book-page p{font-size:11px}
+.book-page img{height:auto;aspect-ratio:1/1;object-fit:cover}
+.open-book{margin-left:0;margin-right:0}
+.ed-gallery .notion-gallery-card:first-child img{height:auto;aspect-ratio:4/3}
+.ed-gallery img{height:auto;aspect-ratio:1/1}
+.closing{padding:64px 28px 48px}
+.kakao-chat-scroll{height:350px;overscroll-behavior-y:contain}
+.mobile-shell.opening-locked{overflow-y:hidden!important}
+@media(min-width:768px){
+ :root{--card-height:calc(100dvh - 56px)}
+ html{scroll-snap-type:none}
+ body{height:100dvh;overflow:hidden;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 38%,#f9f6f2,#e6e2de)}
+ .mobile-shell{box-sizing:content-box;width:440px;max-width:440px;height:var(--card-height);min-height:0;margin:0;border:8px solid #ffffffdd;border-radius:48px;overflow-x:hidden;overflow-y:auto;scrollbar-width:none;scroll-behavior:smooth;scroll-snap-type:y proximity;overscroll-behavior-y:contain;box-shadow:0 24px 60px #3f303028,0 3px 5px #fff9,inset 0 0 0 1px #fff}
+ .mobile-shell::-webkit-scrollbar{display:none}
+ .hero-stage,.hero-stage.captured{height:var(--card-height)}
+ .cam-top-bar{padding-top:25px}
+ .cam-bottom-controls{padding-bottom:24px}
+ .skip-opening{top:66px}
+ .lightbox-content{max-width:min(90vw,900px)}
+}
+@media(max-width:767px){
+ html,body{background:var(--paper);overflow-x:clip}
+ .mobile-shell{max-width:100%;border:0;border-radius:0;box-shadow:none;overflow:visible}
+ .cam-top-bar{padding-top:max(18px,env(safe-area-inset-top))}
+ .cam-bottom-controls{padding-bottom:max(24px,env(safe-area-inset-bottom))}
+ .poster-overlay{padding-bottom:max(24px,env(safe-area-inset-bottom))}
+}
+@media(max-width:359px){.ed-section{padding:52px 22px}.invite{padding:44px 22px 0}.invitation-photo{margin-left:-22px;margin-right:-22px}.invite h1{font-size:57px}.book-page{padding:24px 9px}.kakao-chat-scroll{padding-left:8px;padding-right:8px}.chat-content-col{max-width:76%}}
+@media(prefers-reduced-motion:reduce){html,.mobile-shell{scroll-snap-type:none;scroll-behavior:auto}}
+
+/* Each chapter occupies the actual reading viewport, not the outer PC window. */
+html{scroll-snap-type:y mandatory}
+.editorial>.ed-section,.editorial>.closing{
+ min-height:var(--card-height);
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ scroll-snap-align:start;
+ scroll-snap-stop:always;
+ box-sizing:border-box;
+}
+.hero-stage{scroll-snap-align:start;scroll-snap-stop:always}
+/* Keep the invitation copy and photograph together within a normal phone screen. */
+.editorial>.invite{padding:28px 28px 0;justify-content:flex-start}
+.invite .ribbon{height:35px;width:90px;margin:8px auto}
+.invite h1{font-size:48px;line-height:.95}
+.invite .couple-line{margin-top:15px;font-size:13px}
+.invite .fine-line{height:15px;margin:14px auto}
+.invite .invite-copy{font-size:12px;line-height:1.8}
+.invite .date-feature{margin-top:16px;font-size:22px}
+.invite .venue-feature{margin-top:8px}
+.invite .small-note{margin-top:6px}
+.invite .invitation-photo{margin:20px -28px 0;flex:1;min-height:180px;position:relative}
+.invite .invitation-photo img{height:100%;min-height:180px;max-height:330px;aspect-ratio:auto;object-position:center 65%}
+@supports(height:1svh){.invite .invitation-photo img{height:max(180px,calc(var(--card-height) - 450px))}}
+@media(min-width:768px){
+ html{scroll-snap-type:none}
+ .mobile-shell{scroll-snap-type:y mandatory}
+}
+@media(max-width:359px){.editorial>.invite{padding-left:22px;padding-right:22px}.invite .invitation-photo{margin-left:-22px;margin-right:-22px}}
+@media(prefers-reduced-motion:reduce){html,.mobile-shell{scroll-snap-type:none}}

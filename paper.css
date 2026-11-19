@@ -1,0 +1,107 @@
+/* Supplied paper photograph is used unmodified. */
+.editorial{background:#faf9f6 url('assets/paper-texture.png') center top/470px auto repeat}
+.closing,.ed-footer{background:transparent}
+.invite .heart-thread{width:min(100%,350px);height:100px;margin:10px auto 26px}
+.heart-thread svg{stroke:#a42c48;stroke-width:1.65;filter:none!important}
+.invite .invite-copy{font-family:Pretendard,'Noto Sans KR',sans-serif;font-size:18px;line-height:1.95;color:#211c1d;max-width:380px}
+.invite .invite-copy p+p{margin-top:34px}
+.invite .invitation-photo{margin-top:38px}
+.calendar-title{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:400;letter-spacing:.12em;color:var(--burgundy);margin:0 0 28px}
+.calendar-event-info h2{font-size:21px;line-height:1.8;word-break:keep-all;font-weight:500}
+.calendar-venue{font-size:20px;font-weight:500;line-height:1.8;margin-top:4px;word-break:keep-all}
+.calendar-event-info{margin-bottom:36px}
+.calendar-week{border-top:0;font-family:Pretendard,sans-serif;font-size:14px;padding:10px 0 14px;color:#393337}
+.calendar-week span:first-child,.cal-cell.sun{color:#985867}
+.cal-cell{height:48px;font-size:20px}
+.notion-cal-grid{border-bottom:2px dashed #b5a6a9;padding-bottom:26px}
+.wedding-day-badge{position:relative;isolation:isolate;background:transparent!important;border-radius:0;width:38px;height:36px;font-size:19px;color:white}
+.wedding-day-badge:before{content:"";position:absolute;inset:-2px;z-index:-1;background:var(--burgundy);clip-path:polygon(50% 95%,11% 61%,2% 39%,4% 20%,16% 7%,32% 5%,50% 19%,68% 5%,84% 7%,96% 20%,98% 39%,89% 61%)}
+.dday-unit-card{background:#eee8e380}
+@media(max-width:359px){.invite .invite-copy{font-size:16px}.calendar-event-info h2{font-size:19px}.calendar-venue{font-size:18px}.calendar-week{font-size:12px}}
+
+/* Three equal thumbnails per row, progressively revealed in groups of nine. */
+.gallery-title{font:italic 38px/1.3 'Cormorant Garamond',serif;color:var(--burgundy);letter-spacing:.04em;margin:0 0 38px}
+.ed-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%}
+.ed-gallery .notion-gallery-card:first-child{grid-column:auto}
+.ed-gallery .notion-gallery-card{border-radius:5px;overflow:hidden;min-width:0}
+.ed-gallery .notion-gallery-card img,.ed-gallery .notion-gallery-card:first-child img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+.ed-gallery [hidden],.gallery-more[hidden]{display:none!important}
+.gallery-more{margin:24px auto 0;padding:12px 32px;border:1px solid #bfa4aa;border-radius:24px;font:inherit;color:var(--burgundy)}
+.lightbox-modal{inset:auto;box-sizing:border-box;padding:68px 14px 28px;overflow:hidden;visibility:hidden;overscroll-behavior:contain}
+.lightbox-modal.open{visibility:visible}
+.lightbox-content{width:100%;max-width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;min-height:0}
+.lightbox-img{width:100%;height:auto;max-height:calc(100% - 42px);min-height:0;object-fit:contain;flex-shrink:1;border-radius:0;box-shadow:none}
+.lightbox-caption{flex-shrink:0;margin-top:14px}
+@media(min-width:768px){.lightbox-modal{border-radius:40px}.lightbox-content{max-width:100%}}
+
+/* Open two-column profiles: transparent cutouts can replace the sample images. */
+.couple-profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;width:100%;align-items:start}
+.couple-profile{min-width:0;text-align:center}
+.profile-sticker{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:transparent;border:0;border-radius:0;filter:drop-shadow(0 3px 2px #5b344015)}
+.couple-profile h3{font:500 20px/1.6 Pretendard,'Noto Sans KR',sans-serif;margin:24px 0 22px;white-space:nowrap}
+.couple-profile h3 span{font-size:16px;font-weight:400;color:#87505f;margin-right:4px}
+.couple-profile p{font:400 18px/1.9 Pretendard,'Noto Sans KR',sans-serif;letter-spacing:-.035em;color:#494044;word-break:keep-all;overflow-wrap:break-word}
+.couple-profile .profile-description{margin-top:22px}
+#about>.small-note{margin-top:32px}
+#about>.notebook-contact{margin-top:24px;min-width:210px}
+@media(max-width:359px){.couple-profiles{gap:12px}.couple-profile h3{font-size:18px}.couple-profile h3 span{font-size:14px}.couple-profile p{font-size:16px}}
+
+/* Reference profile colors and illustrated promises; names intentionally omitted. */
+.couple-profile h3{margin:22px 0 20px}
+.couple-profile h3 span{font-size:18px;color:#568c9f;margin:0}
+.couple-profile:last-child h3 span{color:#c76d76}
+.profile-mbti{color:#748fc1}
+.couple-profile:last-child .profile-mbti{color:#cb858a}
+.couple-profile .profile-description{margin-top:12px;line-height:1.8}
+.profile-emoji{display:block;font-size:24px;line-height:1.5;margin-bottom:7px}
+.couple-profile .profile-family{margin-top:24px}
+
+/* Minimal family contact sheet, matching the two-column reference. */
+.contact-dialog{width:min(440px,calc(100% - 24px));max-height:calc(100dvh - 48px);padding:48px 18px 24px;border-radius:8px;background:#fff;color:#111;font-family:Pretendard,'Noto Sans KR',sans-serif}
+.contact-dialog>h2,.contact-dialog>h2+p{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.family-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:46px 14px}
+.family-card small{display:block;font-size:20px;line-height:1.5;color:#111;font-weight:400}
+.family-card h3{font-size:22px;line-height:1.5;font-weight:700;color:#000;margin:14px 0 16px}
+.family-actions{gap:8px}
+.family-actions a,.family-actions button{width:40px;height:40px;border:0;border-radius:0;color:#000}
+.family-actions svg{width:25px;height:25px;fill:currentColor;stroke:currentColor;stroke-width:1.2}
+.family-actions button:disabled{opacity:1;cursor:default}
+.family-card .pending{display:none}
+.contact-dialog>p:last-child{font-size:12px;line-height:1.6;color:#888}
+.contact-close{top:6px;right:6px;color:#999;font-size:27px}
+@media(max-width:359px){.family-card small{font-size:18px}.family-card h3{font-size:20px}.family-actions{gap:3px}.family-grid{gap:32px 8px}}
+
+@font-face{font-family:'Gyeonggi Batang';src:url('assets/gyeonggi-batang-regular.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+.editorial,.editorial *,.contact-dialog,.contact-dialog *{font-family:'Gyeonggi Batang','Noto Serif KR',serif!important;font-weight:400!important;font-synthesis:none}
+.editorial .gallery-title,.editorial .calendar-title{font-family:'Cormorant Garamond',serif!important}
+.invite .heart-thread{width:min(100%,350px);height:auto;aspect-ratio:390/125;flex-shrink:0;margin:4px auto 26px}
+.invite .heart-thread svg{display:block;width:100%;height:100%;stroke:#bb294a;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;overflow:visible;filter:none!important}
+
+.address-copy{align-self:center;padding:11px 24px;border:1px solid #d7c0c3;border-radius:10px;background:#fff9;color:var(--burgundy);font-size:17px}.address-copy-status{min-height:24px;font-size:13px;line-height:1.6;margin:8px 0 12px;color:#87505f}
+
+.venue-map{width:100%;height:300px;flex-shrink:0;border-radius:12px;overflow:hidden;background:#f0eeeb}.venue-map[hidden]{display:none}.map-status{font-size:13px;line-height:1.7;color:#88777c}.map-status:empty{display:none}.map-actions button{flex:1;padding:14px 2px;font-size:17px;border:1px solid #d7c0c3;border-radius:22px;color:var(--burgundy)}.map-actions button:disabled{opacity:.5}.venue-map *{font-family:Arial,sans-serif!important}
+/* Consistent viewport sizing across desktop browsers. */
+@media(min-width:768px){.mobile-shell{width:440px;height:calc(100dvh - 56px);transform:none;zoom:1}}
+.invite-copy p{opacity:0;transform:translateY(22px);transition:opacity 1s ease,transform 1s ease}
+.invite-copy.is-visible p{opacity:1;transform:translateY(0)}
+.invite-copy.is-visible p:nth-child(2){transition-delay:.25s}.invite-copy.is-visible p:nth-child(3){transition-delay:.5s}
+.map-platform-icon{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;margin-right:6px;border-radius:7px;font:700 18px Arial!important;vertical-align:middle}.naver-icon{background:#03c75a;color:white}.kakao-icon{background:#fee500;color:#262020}
+@media(prefers-reduced-motion:reduce){.invite-copy p{opacity:1;transform:none;transition:none}}
+
+.line-one{color:#1689c1}.line-two{color:#32990b}.transit-content mark{background:#f6e4ad;color:inherit;padding:0 2px}.account-demo{font-size:13px;color:#92747c;margin:0 0 18px}.account-details{width:100%;border:1px solid #d2bec1!important;border-radius:9px;background:#faf7f4cc;overflow:hidden}.account-details summary{text-align:center;font-size:19px;padding:20px 14px}.account-details>div.account-list{padding:0 16px}.account-row{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:24px 0;text-align:left;border-top:1px dashed #d9c7cb}.account-row p{font-size:16px;line-height:1.8;margin:0}.account-row p+p{margin-top:14px}.account-buttons{display:flex;flex-direction:column;gap:7px;flex-shrink:0}.account-buttons button{padding:9px 12px;border-radius:9px;font-size:15px;min-width:73px}.pay-preview{background:#fee500;color:#191600;opacity:1}.copy-account{border:1px solid #d9c7cb;background:transparent}.account-row strong{font-weight:600!important}#accountStatus{font-size:13px;color:#87505f;margin-top:14px}
+
+.guestbook-title{font-size:24px;letter-spacing:.13em;color:var(--burgundy);margin:0 0 30px}#guestbook{padding:40px 20px}.kakao-chat-scroll{height:clamp(480px,calc(var(--card-height) - 270px),760px);max-height:none}.kakao-room{width:100%}
+
+#snap{padding:48px 22px}.snap-heading{font-size:28px;line-height:1.5;margin:18px 0 36px}.guest-snap-card{background:#ffffffb8;border:1px solid #e7dfdb;border-radius:12px;padding:18px;box-shadow:0 3px 10px #54333e0a;width:100%;box-sizing:border-box}.guest-snap-cover{display:block;width:100%;height:210px;object-fit:cover;border-radius:8px 8px 0 0}.guest-snap-body{padding:0 2px 6px}.snap-date{font-size:17px;line-height:1.9;padding:25px 0;border-bottom:1px dashed #aaa}.snap-message p{font-size:17px;line-height:1.95;margin:25px 0}.guest-snap-upload{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:100%;padding:14px 8px;background:#aaa7a5;color:#fff;border-radius:7px;font-size:18px;line-height:1.5;box-shadow:0 3px 7px #0001}.guest-snap-upload span{font-size:22px}.account-details summary span{transform:rotate(180deg)}.account-details[open] summary span{transform:rotate(0)}
+
+.notice-heading{font-size:27px;margin:0 0 36px;color:var(--burgundy)}.notice-box{width:100%;border:1px solid #d7c0c3;background:#fff9;border-radius:13px;overflow:hidden}.notice-tabs{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid #dccdd0}.notice-tabs button{padding:20px 6px;font-size:18px;color:#95858a;border-bottom:2px solid transparent}.notice-tabs button[aria-selected="true"]{color:var(--burgundy);background:#f3e8e9;border-bottom-color:var(--burgundy)}.notice-panel{min-height:260px;box-sizing:border-box;padding:32px 20px;text-align:center;font-size:18px;line-height:1.95}.notice-panel p+p{margin-top:22px}.notice-panel mark{background:#f6e4ad;color:inherit}
+
+.notice-panel{padding:16px;min-height:0}.notice-image{display:block;width:100%;height:auto;object-fit:contain;border-radius:6px}.notice-image+.notice-image{margin-top:16px}#notices{justify-content:flex-start;padding-top:48px;padding-bottom:48px}
+
+.notice-parking-copy{text-align:left;padding:8px 4px 24px;font-size:18px;line-height:1.95;word-break:keep-all}.notice-parking-copy p+p{margin-top:26px}.notice-parking-copy strong{color:var(--burgundy)}
+
+.notice-atm-copy{text-align:left;padding:8px 4px 24px;font-size:18px;line-height:1.95;word-break:keep-all}.notice-atm-copy>p{color:var(--burgundy);margin-bottom:20px}.notice-atm-copy ul{list-style:none;padding:0;margin:0}.notice-atm-copy li+li{margin-top:9px}.notice-atm-photo{width:100%;aspect-ratio:434/429;overflow:hidden;border-radius:6px;position:relative}.notice-atm-photo img{display:block;width:100%;height:auto;position:absolute;left:0;bottom:0}
+
+.editorial>.closing-photo{padding:0;min-height:var(--card-height);display:flex;justify-content:center;overflow:hidden}.closing-photo:before{display:none}.closing-photo>img{display:block;width:100%;height:var(--card-height);object-fit:cover;object-position:center}
+
+.editorial .about-title{font-family:'Cormorant Garamond',serif!important;font-style:italic;font-size:38px;color:var(--burgundy);margin:0 0 36px;line-height:1.3}.couple-profile h3 span{margin-right:5px}
