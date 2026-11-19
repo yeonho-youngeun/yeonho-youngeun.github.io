@@ -133,3 +133,5 @@
 .closing-photo>img{object-fit:contain;background:#12321d}
 
 @font-face{font-family:GrandpaSharing;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Grandpa_sharing.woff') format('woff');font-display:swap}.closing-photo{position:relative}.editorial .closing-message{position:absolute;top:23%;left:4%;width:92%;color:white;text-align:center;letter-spacing:0;text-shadow:0 2px 5px #0008}.editorial .closing-message,.editorial .closing-message *{font-family:GrandpaSharing,cursive!important;font-size:clamp(20px,5vw,27px);line-height:1.65}.closing-message p+p{margin-top:24px}.closing-message span{opacity:0}.closing-message.writing span{animation:writeLetter .2s ease forwards;animation-delay:var(--letter-delay)}@keyframes writeLetter{to{opacity:1}}@media(prefers-reduced-motion:reduce){.closing-message span{opacity:1;animation:none!important}}
+/* Fill the camera viewfinder before revealing the complete poster. */
+.hero-stage:not(.captured) .wedding-photo{object-fit:cover;object-position:center 65%;transform:scale(1.13)}
