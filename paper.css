@@ -105,3 +105,31 @@
 .editorial>.closing-photo{padding:0;min-height:var(--card-height);display:flex;justify-content:center;overflow:hidden}.closing-photo:before{display:none}.closing-photo>img{display:block;width:100%;height:var(--card-height);object-fit:cover;object-position:center}
 
 .editorial .about-title{font-family:'Cormorant Garamond',serif!important;font-style:italic;font-size:38px;color:var(--burgundy);margin:0 0 36px;line-height:1.3}.couple-profile h3 span{margin-right:5px}
+/* Keep the map close to the venue information. */
+#location{justify-content:flex-start;padding-top:38px;padding-bottom:38px}
+#location>.ed-heading{margin:10px 0 18px}
+#location>.ed-heading:after{margin:12px auto 0}
+#location>.loc-name{margin:0;font-size:18px;line-height:1.65}
+#location>.loc-address{margin:10px 0 14px;font-size:17px;line-height:1.7}
+#location>.address-copy{padding:8px 20px;font-size:16px}
+#location>.address-copy-status{min-height:18px;margin:4px 0 8px;font-size:12px}
+#location>.map-actions{margin:12px 0 16px}
+#location>.ed-heading:after{display:none}
+#location .loc-address,#location .transit-content,#location .transit-tabs button,#location .address-copy-status,#location .map-status{color:#292326}
+#location .transit-tabs button.selected{color:var(--burgundy)}
+
+#location>.map-actions{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}#location>.map-actions a,#location>.map-actions button{font-size:14px;padding:12px 2px;white-space:nowrap}.map-platform-icon{width:21px;height:21px;margin-right:4px;font-size:15px!important}.tmap-icon{background:linear-gradient(135deg,#ee45bd,#5667ef 55%,#00bfb8);color:white}
+
+.gallery-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:54px;border-radius:8px;background:#0006;color:white;font:38px/1 Arial;display:flex;align-items:center;justify-content:center}.gallery-prev{left:7px}.gallery-next{right:7px}.gallery-position{position:absolute;left:20px;top:30px;color:white;font:14px Arial;letter-spacing:.06em}
+
+.couple-profile .profile-family{font-size:17px;line-height:1.9;margin-top:28px;color:#292326}.editorial .profile-family strong{font-weight:700!important;font-synthesis:weight}
+
+.hero-stage .wedding-photo{object-fit:contain;object-position:center;background:#81a8cb}.hero-stage .wedding-photo.focused{object-fit:contain;object-position:center;transform:scale(1)}
+@media(min-width:768px){
+ :root{--card-height:calc(100dvh - 32px)}
+ .mobile-shell{width:min(420px,calc((100dvh - 32px) * .48));max-width:420px;height:var(--card-height)}
+}
+
+.closing-photo>img{object-fit:contain;background:#12321d}
+
+@font-face{font-family:GrandpaSharing;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Grandpa_sharing.woff') format('woff');font-display:swap}.closing-photo{position:relative}.editorial .closing-message{position:absolute;top:23%;left:4%;width:92%;color:white;text-align:center;letter-spacing:0;text-shadow:0 2px 5px #0008}.editorial .closing-message,.editorial .closing-message *{font-family:GrandpaSharing,cursive!important;font-size:clamp(20px,5vw,27px);line-height:1.65}.closing-message p+p{margin-top:24px}.closing-message span{opacity:0}.closing-message.writing span{animation:writeLetter .2s ease forwards;animation-delay:var(--letter-delay)}@keyframes writeLetter{to{opacity:1}}@media(prefers-reduced-motion:reduce){.closing-message span{opacity:1;animation:none!important}}
