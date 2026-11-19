@@ -143,3 +143,5 @@
  :root{--card-height:min(calc(100dvh - 32px),calc((100vw - 48px) * 16 / 9))}
  .mobile-shell{width:calc(var(--card-height) * 9 / 16);max-width:none;height:var(--card-height)}
 }
+/* Fill the closing frame so lettering sits directly over the photograph. */
+.closing-photo>img{object-fit:cover;object-position:50% 50%;background:transparent}
