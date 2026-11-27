@@ -173,3 +173,8 @@
 @media(max-width:359px){#about .sticker-about{top:12px;right:-44px}}
 #account .sticker-account{top:8px;left:-42px;transform:rotate(-12deg)}
 @media(max-width:359px){#account .sticker-account{top:8px;left:-32px}}
+#account .sticker-account{background-image:url('assets/account-dog-sticker.png');background-size:contain;background-position:center;width:228px;height:242px;top:8px;left:-42px}
+@media(max-width:359px){#account .sticker-account{width:186px;height:198px;left:-32px}}
+/* Free scrolling: no chapter snapping or automatic smooth scrolling. */
+html,body,.mobile-shell{scroll-snap-type:none!important;scroll-behavior:auto!important}
+.hero-stage,.editorial>.ed-section,.editorial>.closing{scroll-snap-align:none!important;scroll-snap-stop:normal!important}
