@@ -148,3 +148,28 @@
 .editorial .closing-message{top:15%;left:5%;width:90%}
 .editorial .closing-message,.editorial .closing-message *{font-size:clamp(18px,4.5vw,22px);line-height:1.7}
 .closing-message p+p{margin-top:20px}
+.guest-snap-upload{flex-direction:row;gap:8px;white-space:nowrap;font-size:17px}
+.guest-snap-upload span{font-size:20px;line-height:1}
+#guestbook{scroll-snap-stop:normal}.kakao-chat-scroll{height:auto;min-height:480px;max-height:none;overflow:visible;overscroll-behavior:auto}.guestbook-status{font-size:13px;margin:12px 0;line-height:1.7}.bubble-in{white-space:pre-wrap;overflow-wrap:anywhere}
+
+.guestbook-confirm{margin:auto;padding:28px 24px;border:0;border-radius:16px;width:min(320px,calc(100% - 40px));background:#fffdfa;color:#292326;box-shadow:0 15px 50px #0003}.guestbook-confirm::backdrop{background:#0006}.guestbook-confirm p{text-align:center;font-family:'Gyeonggi Batang',serif;font-size:20px;margin:0 0 24px}.guestbook-confirm form>div{display:flex;gap:10px}.guestbook-confirm button{flex:1;padding:12px;border-radius:9px;border:1px solid #d7c0c3;font-size:17px}.guestbook-confirm button[value=yes]{background:var(--burgundy);color:white}.guestbook-confirm button:focus-visible{outline:2px solid var(--burgundy);outline-offset:3px}
+
+.invite .invitation-photo{flex:none;width:calc(100% + 56px)}.invite .invitation-photo img{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:1;object-fit:contain}.invite .invitation-photo figcaption,.invite .invitation-photo:after{display:none}
+@media(max-width:359px){.invite .invitation-photo{width:calc(100% + 44px)}}
+
+.side-sticker{position:absolute;display:block;width:76px;height:110px;background-image:url('assets/dog-stickers.png');background-repeat:no-repeat;background-size:200% 100%;pointer-events:none;z-index:2;filter:drop-shadow(0 3px 3px #49303818)}.sticker-about{top:18px;right:8px;background-position:left center;transform:rotate(12deg)}.sticker-account{top:14px;left:5px;background-position:right center;transform:rotate(-12deg)}#about>.about-title{margin-top:35px}#account>.ed-eyebrow{margin-top:40px}@media(max-width:359px){.side-sticker{width:62px;height:90px}}
+
+.side-sticker{width:228px;height:330px;opacity:1}.sticker-about{top:12px;right:-42px;transform:rotate(12deg)}.sticker-account{top:10px;left:-48px;transform:rotate(-12deg)}#about>.about-title{margin-top:270px}#account>.ed-eyebrow{margin-top:285px}.couple-profile .profile-personality{margin-top:18px}@media(max-width:359px){.side-sticker{width:186px;height:270px}#about>.about-title{margin-top:225px}#account>.ed-eyebrow{margin-top:235px}}
+/* Stickers sit beside the content without reserving a separate row. */
+#about>.about-title{margin-top:0}
+#about .sticker-about{top:34%;right:-92px;width:228px;height:330px;transform:rotate(12deg);z-index:0;opacity:.95}
+#about>.couple-profiles,#about>.about-title,#about>.small-note,#about>.notebook-contact{position:relative;z-index:1}
+#account>.ed-eyebrow{margin-top:0}
+#account .sticker-account{top:32%;left:-105px;z-index:0}
+#account> :not(.side-sticker){position:relative;z-index:1}
+@media(max-width:359px){#about>.about-title,#account>.ed-eyebrow{margin-top:0}#about .sticker-about{width:186px;height:270px;right:-80px}#account .sticker-account{left:-90px}}
+
+#about .sticker-about{top:12px;right:-52px;transform:rotate(12deg)}
+@media(max-width:359px){#about .sticker-about{top:12px;right:-44px}}
+#account .sticker-account{top:8px;left:-42px;transform:rotate(-12deg)}
+@media(max-width:359px){#account .sticker-account{top:8px;left:-32px}}

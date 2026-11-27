@@ -1,0 +1,1 @@
+window.guestbookConfig = {"url":"https://zgyrubqycytyhexmsuol.supabase.co/functions/v1/wedding-guestbook","anonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpneXJ1YnF5Y3l0eWhleG1zdW9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ3NDk2MDcsImV4cCI6MjExMDMyNTYwN30.RkehgOBk3r9bJCBehY_f0AUYZYS_curDVyT0-tjVpEs"};
